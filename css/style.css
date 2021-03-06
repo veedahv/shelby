@@ -29,6 +29,12 @@ a {
     display: inline-block;
 }
 
+.container {
+    /* max-width: 850px; */
+    /* padding: 10px; */
+    /* margin: auto; */
+}
+
 .logo  {
     color: var(--primary);
 }
