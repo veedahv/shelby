@@ -83,6 +83,18 @@ a {
     /* border-radius: 20px; */
 }
 
+.navbar-light .navbar-toggler:hover {
+    /* outline: none !important; */
+    box-shadow: 2px 2px 0px rgba(0, 0, 0, .2);
+}
+
+.navbar-light .navbar-toggler:active,
+.navbar-light .navbar-toggler:focus {
+    /* outline: none !important; */
+    box-shadow: 1px 1px 0px rgba(0, 0, 0, .2);
+}
+
+
 .home {
     /* color: var(--white); */
     background: url('../assets/images/jonathan-mcgonnell-peaky-blinders-car-factory\ 1.jpg') no-repeat center center;
@@ -211,15 +223,20 @@ a {
 
 .review-box {
     background-color: #808080;
+    border-radius: 12px;
     /* transform: scale(.5, .5); */
 }
 
+.review-img {
+    border-radius: 12px;
+}
+
 .review-box .card-title {
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .ratings {
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .star-img {
@@ -227,7 +244,7 @@ a {
 }
 
 .review-box .card-text {
-    font-size: 9px;
+    font-size: 8px;
 }
 
 .review-active {
@@ -237,13 +254,15 @@ a {
 
 .navigation-box {
     top: 0;
-    left: -50%;
-    width: 200%;
+    left: 50%;
+    width: 180%;
+    transform: translateX(-50%);
 }
 
 .review-active .review-box {
     background-color: #da7676;
-    transform: scale(1.8, 1.4);
+    transform: scale(1.7, 1.6);
+    box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.2);
     /* transform: scale(1.0, 1.0); */
 }
 
@@ -259,6 +278,10 @@ a {
     /* padding-bottom: 30px; */
 }
 
+.icon-img {
+    width: 25px;
+}
+
 .footer-li {
     /* padding: 10px 0px; */
     /* font-size: 1.6rem; */
@@ -267,7 +290,7 @@ a {
 
 .subscribe-btn-contain {
     margin-top: 25px;
-    display: flex;
+    /* display: flex; */
     background-color: var(--secondary);
     border-radius: 18px;
 }
@@ -290,6 +313,14 @@ a {
     background: transparent;
     border: none;
     outline: none;
+}
+
+.email::-webkit-input-placeholder {
+    color: var(--white);
+}
+
+.email::-moz-placeholder {
+    color: var(--white);
 }
 
 @media (max-width: 750px) {
